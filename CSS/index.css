@@ -19,11 +19,24 @@ body{
     background-size: cover;
  }
 
-.article{
-    color: #bbb;
-    text-align: center;
-    margin-top: 90px;
-    font-size: xx-large;
+@media screen and (min-height:1280px) {
+    .article {
+        color: #bbb;
+        text-align: center;
+        margin-top: 10%;
+        font-size: 30pt;
+        font-style: italic;
+    }
+}
+
+@media screen and (max-height:1280px) {
+    .article {
+        color: #bbb;
+        text-align: center;
+        margin-top: 5%;
+        font-size: 30pt;
+        font-style: italic;
+    }
 }
 
 .section{
