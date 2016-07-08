@@ -1,0 +1,172 @@
+*{
+    border: 0;
+    padding: 0;
+}
+
+@font-face {font-family: 'iconfont';
+    src: url('../Font/iconfont.eot'); /* IE9*/
+    src: url('../Font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../Font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../Font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../Font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.icon-font{
+    font-family:"iconfont" !important;
+    font-size:25px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media all and (orientation : portrait) {
+    .MainHeader {
+        display: none;
+    }
+    .MainArticle{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media all and (orientation : landscape) {
+    @media screen and (min-width: 1200px){
+        @media screen and (max-height: 640px){
+            .MainHeader {
+                height: 640px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                float: left;
+                width: 15%;
+                background-color: #112233;
+            }
+            .MainArticle{
+                width: 85%;
+                height: auto;
+                float: right;
+            }
+        }
+        @media screen and (min-height: 640px){
+            .MainHeader {
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                float: left;
+                width: 15%;
+                background-color: #112233;
+            }
+            .MainArticle{
+                width: 85%;
+                height: auto;
+                float: right;
+            }
+        }
+    }
+    @media screen and (max-width: 1200px){
+        .MainHeader {
+            display: none;
+        }
+        .MainArticle{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.UserInformation{
+    margin-top: 60px;
+    height: 20%;
+}
+
+.UserImageDiv{
+    height: 50%;
+    text-align: center;
+}
+
+.UserImage{
+    height: 100%;
+    width: auto;
+    border-radius: 45%  ;
+}
+
+.UserTextInfo{
+    margin-top: 5px;
+    text-align: center;
+    color: #aaa;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.UserNameInfo{
+    margin-top: 2px;
+    text-align: center;
+    color: #aaa;
+    font-size: xx-small;
+}
+
+.MainNavLeft{
+    text-align: center;
+}
+
+.MainNavUl{
+    color: #aaa;
+}
+.MainNavUl li{
+    height: 55px;
+    margin-bottom: 1px;
+    line-height: 55px;
+}
+
+.MainNavUl li:hover{
+    background-color: #001122;
+    cursor: pointer;
+}
+
+.MainNavUl .Active{
+    background-color: #001122;
+}
+
+.NavFooter{
+    height: 10%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.NavFooterImg{
+    color: #aaa;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.NavFooterImg:hover{
+    color: #001122;
+    cursor: pointer;
+}
+
+.MainArticleInfo{
+    padding: 10px;
+    height: 268px;
+    border-bottom: solid 2px #eee;
+    background-color: red;
+}
+
+.MainArticleImgDiv{
+    height: 100%;
+    float: left;
+    width: 30%;
+    background-color: blue;
+}
+
+.MainArticleContent{
+    height: 100%;
+    float: left;
+    width: 70%;
+    background-color: gray;
+}
+
+.MainArticleImg{
+    height: 100%;
+    width: 100%;
+}
