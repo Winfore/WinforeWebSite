@@ -19,6 +19,21 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.MainHeader {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 15%;
+    background-color: #001122;
+}
+.MainArticle{
+    width: 85%;
+    height: auto;
+    float: right;
+}
+
 @media all and (orientation : portrait) {
     .MainHeader {
         display: none;
@@ -39,7 +54,7 @@
                 left: 0;
                 float: left;
                 width: 15%;
-                background-color: #112233;
+                background-color: #001122;
             }
             .MainArticle{
                 width: 85%;
@@ -55,7 +70,7 @@
                 left: 0;
                 float: left;
                 width: 15%;
-                background-color: #112233;
+                background-color: #001122;
             }
             .MainArticle{
                 width: 85%;
@@ -120,12 +135,12 @@
 }
 
 .MainNavUl li:hover{
-    background-color: #001122;
+    background-color: #000011;
     cursor: pointer;
 }
 
 .MainNavUl .Active{
-    background-color: #001122;
+    background-color: #000011;
 }
 
 .NavFooter{
@@ -141,7 +156,7 @@
 }
 
 .NavFooterImg:hover{
-    color: #001122;
+    color: #000011;
     cursor: pointer;
 }
 
@@ -169,4 +184,99 @@
 .MainArticleImg{
     height: 100%;
     width: 100%;
+}
+
+.MainTextSec{
+    font-size: 5em;
+    font-weight: 600;
+}
+
+.MainTextA{
+    text-decoration:none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.MainTextSec .MainTextA{
+    color:#001122;
+}
+.MainTextSec .MainTextA:hover{
+    -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon 1.5s ease-in-out infinite alternate;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+.MainTextSec .MainTextA:hover{
+    text-decoration:none;
+    color:#ffffff;
+}
+
+@-webkit-keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px  #fff,
+        0 0 30px  #fff,
+        0 0 40px  #228DFF,
+        0 0 70px  #228DFF,
+        0 0 80px  #228DFF,
+        0 0 100px #228DFF,
+        0 0 150px #228DFF;
+    }
+    to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #228DFF,
+        0 0 35px #228DFF,
+        0 0 40px #228DFF,
+        0 0 50px #228DFF,
+        0 0 75px #228DFF;
+    }
+}
+
+@-moz-keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px  #fff,
+        0 0 30px  #fff,
+        0 0 40px  #228DFF,
+        0 0 70px  #228DFF,
+        0 0 80px  #228DFF,
+        0 0 100px #228DFF,
+        0 0 150px #228DFF;
+    }
+    to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #228DFF,
+        0 0 35px #228DFF,
+        0 0 40px #228DFF,
+        0 0 50px #228DFF,
+        0 0 75px #228DFF;
+    }
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff,
+        0 0 20px  #fff,
+        0 0 30px  #fff,
+        0 0 40px  #228DFF,
+        0 0 70px  #228DFF,
+        0 0 80px  #228DFF,
+        0 0 100px #228DFF,
+        0 0 150px #228DFF;
+    }
+    to {
+        text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #228DFF,
+        0 0 35px #228DFF,
+        0 0 40px #228DFF,
+        0 0 50px #228DFF,
+        0 0 75px #228DFF;
+    }
 }
